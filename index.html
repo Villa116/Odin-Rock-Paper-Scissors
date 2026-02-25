@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Rock Paper Scissors</h1>
-        <p class="rules">Rules: Rock crushes Scissors, Scissors cuts Paper, and Paper covers Rock, with ties leading to a replay.</p>
-        <h2>You are playing against the computer. The first one to reach 5 points has won the game.</h2>
-        <h2>Please make your selection by cliking one of the buttons bellow</h2>
+        <h1 id="title">Welcome to Rock Paper Scissors</h1>
+        <div id="instructions">
+            <p>Rules: Rock crushes Scissors, Scissors cuts Paper, and Paper covers Rock, with ties leading to a replay.</p>
+            <p>You are playing against the computer. The first one to reach 5 points has won the game.</p>
+            <p>Please make your selection by cliking one of the buttons bellow</p>
+        </div>
+
         <div id="btnContainer">
             <button class="btnRock btnChoice" data-selection="rock">Rock</button>
             <button class="btnPaper btnChoice" data-selection="paper">Paper</button>
@@ -20,22 +26,22 @@
         </div>
         <div class="gameDisplay">
             <div class="roundNumber column">
-                <span>Round </span>
+                <span class="tableHeader">Round </span>
             </div>
             <div class="userSelection column">
-                <span>User Seclection </span>
+                <span class="tableHeader">User Seclection </span>
             </div>
             <div class="computerSelection column">
-                <span>Computer Selection </span>
+                <span class="tableHeader">Computer Selection </span>
             </div>
-            <div class="roundWinner column">
-                <span>Round Winner </span>
+            <div class="roundWinner column winnerCell">
+                <span class="tableHeader winnerCell">Round Winner </span>
             </div>
             <div class="userScore column">
-            <span>User Score </span>
+            <span class="tableHeader">User Score </span>
             </div>
             <div class="computerScore column">
-                <span>Computer Score </span>
+                <span class="tableHeader">Computer Score </span>
             </div>
         </div>
     </div>

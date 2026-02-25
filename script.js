@@ -36,11 +36,23 @@ buttonContainer.addEventListener('click', (event) => {
     if (userSelection === "rock" || userSelection === "paper" || userSelection === "scissors") {
         let computerSelection = getComputerChoice();
         let roundNumberSpan = document.createElement("span");
+        roundNumberSpan.classList.add('tableCell');
+
         let userChoiceSpan = document.createElement("span");
+        userChoiceSpan.classList.add('tableCell');
+
         let computerChoiceSpan = document.createElement("span");
+        computerChoiceSpan.classList.add('tableCell');
+
         let roundWinnerSpan = document.createElement("span");
+        roundWinnerSpan.classList.add('tableCell');
+        roundWinnerSpan.classList.add('winnerCell');
+        
         let userRoundScore = document.createElement("span");
+        userRoundScore.classList.add('tableCell');
+
         let computerRoundScore = document.createElement("span")
+        computerRoundScore.classList.add('tableCell');
 
         roundNumberSpan.textContent = roundCount;
 

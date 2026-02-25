@@ -14,9 +14,14 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: rgb(240, 236, 236);
 }
 
 /* Remove built-in form typography styles */
@@ -32,15 +37,40 @@ input, button, textarea, select {
   gap: 20px;
 }
 
+#title {
+  color: rgb(3, 150, 40);
+}
+
+#instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  
+} 
+
 #btnContainer {
   display: flex;
   margin-top: 15px;
   gap: 30px;
 }
 
+.btnChoice, #btnReset {
+  background-color: rgb(3, 150, 40);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 400;
+}
+
 .gameDisplay {
   display: flex;
   gap: 20px;
+  border: 1px solid black;
+  background-color: rgb(170, 247, 189);
+  margin-top: 15px;
 }
 
 .column {
@@ -50,6 +80,22 @@ input, button, textarea, select {
   gap: 10px;
 }
 
+.tableHeader {
+  font-weight: 450;
+  padding: 10px;
+}
+
+.tableCell {
+  font-weight: 350;
+  padding: 5px;
+}
+
+.winnerCell {
+  background-color: rgb(136, 247, 67);
+}
+
 #btnReset {
   display: none;
+  background-color: rgb(224, 224, 2);
+  color: black;
 }
